@@ -105,44 +105,12 @@
 					<li><a href="#contact">Contact</a></li>
 					<li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
 						Login
-					  </button><!-- Button trigger modal -->
-					
-					  
-					  <!-- Modal -->
-					 </li>
+					  </button></li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<!-- /TOPBAR -->
 	
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			</div>
-			<div class="modal-body mb-3">
-				
-					<label for="exampleFormControlInput1" class="form-label">Email address</label>
-					<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-				  
-				
-					<label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-				  
-			</div>
-			<div class="modal-footer">
-			  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-			  <button type="button" class="btn btn-primary">Save changes</button>
-			</div>
-		  </div>
-		</div>
-	  </div>
-
-  
- 
 	<!-- HERO -->
 	<div class="shane_tm_hero" id="home" data-style="three"> <!-- data-style values: one,two,three >> Empty is SQUARE shape -->
 		<div class="background">
@@ -586,6 +554,10 @@
 										<li>
 											<input id="email" type="text" placeholder="Email">
 										</li>
+										
+										<li>
+											<input id="file" type="file" placeholder="Email">
+										</li>
 									</ul>
 								</div>
 								<div class="last">
@@ -662,7 +634,63 @@
 	<!-- /CURSOR -->
 	
 </div>
-<!-- / WRAPPER ALL -->
+<div class="modal fade " style="height:100vh; width:100vw;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog bg-dark text-warning">
+	  <div class="modal-content bg-dark text-warning">
+		<div class="modal-header ">
+			<h2 class="text-light">Login</h2>
+			
+		  <button type="button" class="btn-close btn-danger text-light " data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body mb-3 bg-dark">
+			<form method="POST"  action="/login" >
+				<div class="row">
+			<label class="my-2 fs-4"  for="email">Email address 
+							</label>
+							<input required class="mb-0 form-control col-10" type="email"name="email" id="email" placeholder="Email address ">
+							<label class="my-2 mt-4 fs-4"  for="password">Password</label>
+							<input required class="mb-0 form-control col-10"name="password" type="password" id="password" placeholder="Enter your password">
+							<button  class="btn btn-outline-warning mt-4 fw-800 col-12">Login</button>
+							
+							 <button  style="text-decoration:none;" type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#regModal" > Create account</button>
+							
+			</form>
+		</div>
+
+	  </div>
+	</div>
+  </div> 
+
+
+  <div class="modal fade " style="height:100vh; width:100vw;" id="regModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog bg-dark text-warning">
+	  <div class="modal-content bg-dark text-warning">
+		<div class="modal-header ">
+			<h2 class="text-light">Registration</h2>
+			
+		  <button type="button" class="btn-close btn-danger text-light " data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body mb-3 bg-dark">
+			<form method="POST" class="p-3 m-3" action="/reg" >
+				<div class="row">
+			<label class="my-2 fs-4"  for="email">Email address 
+							</label>
+							<input required class="mb-0 form-control col-10" type="email"name="email" id="email" placeholder="Email address ">
+							<label class="my-2 mt-4 fs-4"  for="password">Password</label>
+							<input required class="mb-0 form-control col-10"name="password" type="password" id="password" placeholder="Enter your password">
+							<a  class="btn btn-outline-warning mt-4 fw-800 col-12">Register</a>
+							
+							<!-- <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+								Login
+							  </button> -->
+							
+			</form>
+		</div>
+
+	  </div>
+	</div>
+  </div> 
+
 	
 <!-- SCRIPTS -->
 <script src="js/jquery.js"></script>
