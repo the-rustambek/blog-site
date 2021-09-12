@@ -19,11 +19,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-
-<link rel="stylesheet" type="text/css" href="../public/css/plugins.css" />
-<link rel="stylesheet" type="text/css" href="../public/css/colors.css" />
-<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/plugins.css" />
+<link rel="stylesheet" type="text/css" href="css/colors.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
 <!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
 <!-- /STYLES -->
 
@@ -47,7 +47,7 @@
 	<div class="shane_tm_modalbox_news">
 		<div class="box_inner">
 			<div class="close">
-				<a href="#"><img class="svg" src="../public/img/svg/cancel.svg" alt="" /></a>
+				<a href="#"><img class="svg" src="img/svg/cancel.svg" alt="" /></a>
 			</div>
 			<div class="description_wrap scrollable">
 			</div>
@@ -61,7 +61,7 @@
 			<div class="container bigger">
 				<div class="topbar_in">
 					<div class="logo">
-						<a href="#"><img src="../public/img/logo/new/dark.png" alt="" /></a>
+						<a href="#"><img src="img/logo/new/dark.png" alt="" /></a>
 					</div>
 					<div class="my_trigger">
 						<div class="hamburger hamburger--collapse-r">
@@ -80,8 +80,9 @@
 						<li class="current"><a href="#home">Home</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#news">News</a></li>
+						<li><a href="#blogs">Blogs</a></li>
 						<li><a href="#contact">Contact</a></li>
+						<li><a href="#login">Login</a></li>
 					</ul>
 				</div>
 			</div>
@@ -93,25 +94,52 @@
 	<div class="shane_tm_topbar">
 		<div class="topbar_inner">
 			<div class="logo">
-				<a href="#"><img src="../public/img/logo/new/dark.png" alt="" /></a>
+				<a href="#"><img src="img/logo/new/dark.png" alt="" /></a>
 			</div>
 			<div class="menu">
 				<ul class="anchor_nav">
 					<li class="current"><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#news">News</a></li>
+					<li><a href="#blogs">Blogs</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						Login
+					  </button><!-- Button trigger modal -->
+					
+					  
+					  <!-- Modal -->
+					 </li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	<!-- /TOPBAR -->
 	
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			  salom
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			  <button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+  
+ 
 	<!-- HERO -->
 	<div class="shane_tm_hero" id="home" data-style="three"> <!-- data-style values: one,two,three >> Empty is SQUARE shape -->
 		<div class="background">
-			<div class="image" data-img-url="../public/img/slider/1.jpg"></div>
+			<div class="image" data-img-url="img/slider/1.jpg"></div>
 		</div>
 		<div class="container">
 			<div class="content">
@@ -134,8 +162,8 @@
 				<div class="about_inner">
 					<div class="left">
 						<div class="image">
-							<img src="../public/img/placeholders/1-1.jpg" alt="" />
-							<div class="main" data-img-url="../public/img/about/1.jpg"></div>
+							<img src="img/placeholders/1-1.jpg" alt="" />
+							<div class="main" data-img-url="img/about/1.jpg"></div>
 						</div>
 					</div>
 					<div class="right">
@@ -147,7 +175,7 @@
 							<p>I'm web designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
 						</div>
 						<div class="shane_tm_button">
-							<a href="../public/img/resume/resume.jpg" download>Download CV</a>
+							<a href="img/resume/resume.jpg" download>Download CV</a>
 						</div>
 					</div>
 				</div>
@@ -182,9 +210,9 @@
 						<li class="design">
 							<div class="inner">
 								<div class="entry shane_tm_portfolio_animation_wrap" data-title="Sweet Fruit" data-category="Design">
-									<a class="zoom" href="../public/img/portfolio/1.jpg">
-										<img src="../public/img/placeholders/1-1.jpg" alt="" />
-										<div class="main" data-img-url="../public/img/portfolio/1.jpg"></div>
+									<a class="zoom" href="img/portfolio/1.jpg">
+										<img src="img/placeholders/1-1.jpg" alt="" />
+										<div class="main" data-img-url="img/portfolio/1.jpg"></div>
 									</a>
 								</div>
 								<div class="mobile_title">
@@ -197,8 +225,8 @@
 							<div class="inner">
 								<div class="entry shane_tm_portfolio_animation_wrap" data-title="Good Present" data-category="Branding">
 									<a class="popup-youtube" href="https://www.youtube.com/watch?v=ICr_bOuM9Zo">
-										<img src="../public/img/placeholders/1-1.jpg" alt="" />
-										<div class="main" data-img-url="../public/img/portfolio/2.jpg"></div>
+										<img src="img/placeholders/1-1.jpg" alt="" />
+										<div class="main" data-img-url="img/portfolio/2.jpg"></div>
 									</a>
 								</div>
 								<div class="mobile_title">
@@ -210,9 +238,9 @@
 						<li class="photography">
 							<div class="inner">
 								<div class="entry shane_tm_portfolio_animation_wrap" data-title="Ice Cream" data-category="Photography">
-									<a class="zoom" href="../public/img/portfolio/3.jpg">
-										<img src="../public/img/placeholders/1-1.jpg" alt="" />
-										<div class="main" data-img-url="../public/img/portfolio/3.jpg"></div>
+									<a class="zoom" href="img/portfolio/3.jpg">
+										<img src="img/placeholders/1-1.jpg" alt="" />
+										<div class="main" data-img-url="img/portfolio/3.jpg"></div>
 									</a>
 								</div>
 								<div class="mobile_title">
@@ -224,9 +252,9 @@
 						<li class="design">
 							<div class="inner">
 								<div class="entry shane_tm_portfolio_animation_wrap" data-title="Black Coffee" data-category="Design">
-									<a class="zoom" href="../public/img/portfolio/4.jpg">
-										<img src="../public/img/placeholders/1-1.jpg" alt="" />
-										<div class="main" data-img-url="../public/img/portfolio/4.jpg"></div>
+									<a class="zoom" href="img/portfolio/4.jpg">
+										<img src="img/placeholders/1-1.jpg" alt="" />
+										<div class="main" data-img-url="img/portfolio/4.jpg"></div>
 									</a>
 								</div>
 								<div class="mobile_title">
@@ -239,8 +267,8 @@
 							<div class="inner">
 								<div class="entry shane_tm_portfolio_animation_wrap" data-title="Blue Lemon" data-category="Branding">
 									<a class="popup-youtube" href="https://www.youtube.com/watch?v=ICr_bOuM9Zo">
-										<img src="../public/img/placeholders/1-1.jpg" alt="" />
-										<div class="main" data-img-url="../public/img/portfolio/5.jpg"></div>
+										<img src="img/placeholders/1-1.jpg" alt="" />
+										<div class="main" data-img-url="img/portfolio/5.jpg"></div>
 									</a>
 								</div>
 								<div class="mobile_title">
@@ -252,9 +280,9 @@
 						<li class="photography">
 							<div class="inner">
 								<div class="entry shane_tm_portfolio_animation_wrap" data-title="Sweet Cherry" data-category="Photography">
-									<a class="zoom" href="../public/img/portfolio/7.jpg">
-										<img src="../public/img/placeholders/1-1.jpg" alt="" />
-										<div class="main" data-img-url="../public/img/portfolio/7.jpg"></div>
+									<a class="zoom" href="img/portfolio/7.jpg">
+										<img src="img/placeholders/1-1.jpg" alt="" />
+										<div class="main" data-img-url="img/portfolio/7.jpg"></div>
 									</a>
 								</div>
 								<div class="mobile_title">
@@ -309,7 +337,7 @@
 	<div class="shane_tm_section">
 		<div class="shane_tm_business_video">
 			<div class="bg">
-				<div class="image jarallax" data-speed="0" data-img-url="../public/img/slider/2.jpg"></div>
+				<div class="image jarallax" data-speed="0" data-img-url="img/slider/2.jpg"></div>
 				<div class="overlay"></div>
 			</div>
 			<div class="content">
@@ -329,14 +357,14 @@
 			<div class="container">
 				<div class="partners_inner">
 					<ul class="owl-carousel">
-						<li class="item"><a href="#"><img src="../public/img/partners/1.png" alt="" /></a></li>
-						<li class="item"><a href="#"><img src="../public/img/partners/2.png" alt="" /></a></li>
-						<li class="item"><a href="#"><img src="../public/img/partners/3.png" alt="" /></a></li>
-						<li class="item"><a href="#"><img src="../public/img/partners/4.png" alt="" /></a></li>
-						<li class="item"><a href="#"><img src="../public/img/partners/5.png" alt="" /></a></li>
-						<li class="item"><a href="#"><img src="../public/img/partners/6.png" alt="" /></a></li>
-						<li class="item"><a href="#"><img src="../public/img/partners/7.png" alt="" /></a></li>
-						<li class="item"><a href="#"><img src="../public/img/partners/8.png" alt="" /></a></li>
+						<li class="item"><a href="#"><img src="img/partners/1.png" alt="" /></a></li>
+						<li class="item"><a href="#"><img src="img/partners/2.png" alt="" /></a></li>
+						<li class="item"><a href="#"><img src="img/partners/3.png" alt="" /></a></li>
+						<li class="item"><a href="#"><img src="img/partners/4.png" alt="" /></a></li>
+						<li class="item"><a href="#"><img src="img/partners/5.png" alt="" /></a></li>
+						<li class="item"><a href="#"><img src="img/partners/6.png" alt="" /></a></li>
+						<li class="item"><a href="#"><img src="img/partners/7.png" alt="" /></a></li>
+						<li class="item"><a href="#"><img src="img/partners/8.png" alt="" /></a></li>
 					</ul>
 				</div>
 			</div>
@@ -362,7 +390,7 @@
 									<p>We were looking for a logo with a touch of modernism. Arlo grasped our needs and produced a stunning design. Awesome to work with Arlo. Incredibly organized, easy to communicate with, responsive with next iterations.</p>
 									<div class="author">
 										<div class="image">
-											<div class="main" data-img-url="../public/img/about/1.jpg"></div>
+											<div class="main" data-img-url="img/about/1.jpg"></div>
 										</div>
 										<div class="short">
 											<h3 class="author"><span>Justin Bieber</span></h3>
@@ -376,7 +404,7 @@
 									<p>I purchased the theme a few weeks ago. I had some issues with the theme, I asked customer support to help me with and they were helpful and kind to help me with all my problems. I definitely recommend this theme to everyone.</p>
 									<div class="author">
 										<div class="image">
-											<div class="main" data-img-url="../public/img/about/2.jpg"></div>
+											<div class="main" data-img-url="img/about/2.jpg"></div>
 										</div>
 										<div class="short">
 											<h3 class="author"><span>Teodor Federico</span></h3>
@@ -390,7 +418,7 @@
 									<p>Really the Code, Support, and design are awesome and its good support they are giving. They give an instant solution to our needs. Really awesome. I will strongly recommend to my friends. Great template, even better service!</p>
 									<div class="author">
 										<div class="image">
-											<div class="main" data-img-url="../public/img/about/3.jpg"></div>
+											<div class="main" data-img-url="img/about/3.jpg"></div>
 										</div>
 										<div class="short">
 											<h3 class="author"><span>Bauen Fernandes</span></h3>
@@ -408,25 +436,25 @@
 	<!-- /TESTIMONIALS -->
 	
 	<!-- NEWS -->
-	<div class="shane_tm_section" id="news">
+	<div class="shane_tm_section" id="blogs">
 		<div class="shane_tm_news">
 			<div class="container">
 				<div class="shane_tm_title">
-					<span>News</span>
-					<h3>Latest News</h3>
+					<span>Blogs</span>
+					<h3>Latest Blogs</h3>
 				</div>
 				<div class="news_list">
 					<ul>
 						<li>
 							<div class="list_inner">
 								<div class="image">
-									<img src="../public/img/placeholders/4-3.jpg" alt="" />
-									<div class="main" data-img-url="../public/img/news/1.jpg"></div>
+									<img src="img/placeholders/4-3.jpg" alt="" />
+									<div class="main" data-img-url="img/news/1.jpg"></div>
 									<a class="shane_tm_full_link" href="#"></a>
 								</div>
 								<div class="details">
-									<h3 class="title"><a href="#">Developers watch out for these burnout symptoms</a></h3>
-									<p class="date">By <a href="#">Alex Watson</a> <span>20 May 2020</span></p>
+									<h3 class="title"><a href="#">Sayt juda zo'r chiqibdi qoyil.Blog uchun idea zo'r ekan</a></h3>
+									<p class="date">By <a href="#">Sarvarjon Amriyev</a> <span>13/09/21</span></p>
 								</div>
 								<div class="description">
 									<p>As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.</p>
@@ -435,10 +463,10 @@
 									<div class="share">
 										<span>Share:</span>
 										<ul class="social">
-											<li><a href="#"><img class="svg" src="../public/img/svg/social/facebook.svg" alt="" ></a></li>
-											<li><a href="#"><img class="svg" src="../public/img/svg/social/twitter.svg" alt="" ></a></li>
-											<li><a href="#"><img class="svg" src="../public/img/svg/social/behance.svg" alt="" ></a></li>
-											<li><a href="#"><img class="svg" src="../public/img/svg/social/dribbble.svg" alt="" ></a></li>
+											<li><a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" ></a></li>
+											<li><a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" ></a></li>
+											<li><a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" ></a></li>
+											<li><a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" ></a></li>
 										</ul>
 									</div>
 								</div>
@@ -447,8 +475,8 @@
 						<li>
 							<div class="list_inner">
 								<div class="image">
-									<img src="../public/img/placeholders/4-3.jpg" alt="" />
-									<div class="main" data-img-url="../public/img/news/2.jpg"></div>
+									<img src="img/placeholders/4-3.jpg" alt="" />
+									<div class="main" data-img-url="img/news/2.jpg"></div>
 									<a class="shane_tm_full_link" href="#"></a>
 								</div>
 								<div class="details">
@@ -462,10 +490,10 @@
 									<div class="share">
 										<span>Share:</span>
 										<ul class="social">
-											<li><a href="#"><img class="svg" src="../public/img/svg/social/facebook.svg" alt="" ></a></li>
-											<li><a href="#"><img class="svg" src="../public/img/svg/social/twitter.svg" alt="" ></a></li>
-											<li><a href="#"><img class="svg" src="../public/img/svg/social/behance.svg" alt="" ></a></li>
-											<li><a href="#"><img class="svg" src="../public/img/svg/social/dribbble.svg" alt="" ></a></li>
+											<li><a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" ></a></li>
+											<li><a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" ></a></li>
+											<li><a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" ></a></li>
+											<li><a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" ></a></li>
 										</ul>
 									</div>
 								</div>
@@ -474,8 +502,8 @@
 						<li>
 							<div class="list_inner">
 								<div class="image">
-									<img src="../public/img/placeholders/4-3.jpg" alt="" />
-									<div class="main" data-img-url="../public/img/news/3.jpg"></div>
+									<img src="img/placeholders/4-3.jpg" alt="" />
+									<div class="main" data-img-url="img/news/3.jpg"></div>
 									<a class="shane_tm_full_link" href="#"></a>
 								</div>
 								<div class="details">
@@ -489,10 +517,10 @@
 									<div class="share">
 										<span>Share:</span>
 										<ul class="social">
-											<li><a href="#"><img class="svg" src="../public/img/svg/social/facebook.svg" alt="" ></a></li>
-											<li><a href="#"><img class="svg" src="../public/img/svg/social/twitter.svg" alt="" ></a></li>
-											<li><a href="#"><img class="svg" src="../public/img/svg/social/behance.svg" alt="" ></a></li>
-											<li><a href="#"><img class="svg" src="../public/img/svg/social/dribbble.svg" alt="" ></a></li>
+											<li><a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" ></a></li>
+											<li><a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" ></a></li>
+											<li><a href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" ></a></li>
+											<li><a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" ></a></li>
 										</ul>
 									</div>
 								</div>
@@ -509,7 +537,7 @@
 	<div class="shane_tm_section" id="contact">
 		<div class="shane_tm_talk">
 			<div class="shape">
-				<img class="svg" src="../public/img/svg/paper.svg" alt="" />
+				<img class="svg" src="img/svg/paper.svg" alt="" />
 			</div>
 			<div class="background" id="talk">
 				<a class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=l6JN5M12BbE',containment:'#talk',autoPlay:true, loop:true, showControls:false, mute:true, startAt:0,opacity:1, quality:'default'}"></a>
@@ -520,7 +548,7 @@
 					<h3>Let's work together!</h3>
 				</div>
 				<div class="button">
-					<a href="#">Make an enquiry</a>
+					<a href="#">Contact us</a>
 				</div>
 			</div>
 		</div>
@@ -531,7 +559,7 @@
 	<div class="shane_tm_mobalbox_contact">
 		<div class="box_inner">
 			<div class="close">
-				<a href="#"><img class="svg" src="../public/img/svg/cancel.svg" alt="" /></a>
+				<a href="#"><img class="svg" src="img/svg/cancel.svg" alt="" /></a>
 			</div>
 			<div class="description_wrap scrollable">
 				<div class="title">
@@ -577,25 +605,25 @@
 					<ul>
 						<li>
 							<div class="list_inner">
-								<img class="svg" src="../public/img/svg/location.svg" alt="" />
+								<img class="svg" src="img/svg/location.svg" alt="" />
 								<p>Brook 103, 90021 New York, USA</p>
 							</div>
 						</li>
 						<li>
 							<div class="list_inner">
-								<img class="svg" src="../public/img/svg/phone.svg" alt="" />
+								<img class="svg" src="img/svg/phone.svg" alt="" />
 								<p><a href="tel:+77 033 442 55 57">+77 033 442 55 57</a></p>
 							</div>
 						</li>
 						<li>
 							<div class="list_inner">
-								<img class="svg" src="../public/img/svg/share.svg" alt="" />
+								<img class="svg" src="img/svg/share.svg" alt="" />
 								<ul class="social">
-									<li><a href="#"><img class="svg" src="../public/img/svg/social/facebook.svg"></a></li>
-									<li><a href="#"><img class="svg" src="../public/img/svg/social/twitter.svg"></a></li>
-									<li><a href="#"><img class="svg" src="../public/img/svg/social/instagram.svg"></a></li>
-									<li><a href="#"><img class="svg" src="../public/img/svg/social/dribbble.svg"></a></li>
-									<li><a href="#"><img class="svg" src="../public/img/svg/social/tik-tok.svg"></a></li>
+									<li><a href="#"><img class="svg" src="img/svg/social/facebook.svg"></a></li>
+									<li><a href="#"><img class="svg" src="img/svg/social/twitter.svg"></a></li>
+									<li><a href="#"><img class="svg" src="img/svg/social/instagram.svg"></a></li>
+									<li><a href="#"><img class="svg" src="img/svg/social/dribbble.svg"></a></li>
+									<li><a href="#"><img class="svg" src="img/svg/social/tik-tok.svg"></a></li>
 									
 									<!-- If you want add or change svg images you can download here for free https://www.flaticon.com -->
 									
@@ -630,12 +658,12 @@
 <!-- / WRAPPER ALL -->
 	
 <!-- SCRIPTS -->
-<script src="../public/js/jquery.js"></script>
+<script src="js/jquery.js"></script>
 <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->	
-<script src="../public/js/plugins.js"></script>
-<script src="../public/js/init.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/init.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5bpEs3xlB8vhxNFErwoo3MXR64uavf6Y&callback=initMap"></script>
 <!-- /SCRIPTS -->
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
