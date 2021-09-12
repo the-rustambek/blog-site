@@ -1,0 +1,341 @@
+@charset "utf-8";
+
+.shane_tm_settings .colors li a.blue{background-color: #4169e1;}
+.shane_tm_settings .colors li a.green{background-color: #66B95C;}
+.shane_tm_settings .colors li a.brown{background-color: #ff9800;}
+.shane_tm_settings .colors li a.pink{background-color: #ff5e94;}
+.shane_tm_settings .colors li a.orange{background-color: #fa5b0f;}
+.shane_tm_settings .colors li a.black{background-color: #333;}
+.shane_tm_settings .colors li a.white{background-color: #e5e5e5;}
+.shane_tm_settings .colors li a.purple{background-color: #9200ee;}
+.shane_tm_settings .colors li a.sky{background-color: #00D4BD;}
+.shane_tm_settings .colors li a.cadetBlue{background-color: #5e9e9f;}
+.shane_tm_settings .colors li a.crimson{background-color: #e54b4b;}
+.shane_tm_settings .colors li a.olive{background-color: #666d41;}
+.shane_tm_settings .colors li a.red{background-color: #fe0000;}
+
+
+.shane_tm_all_wrap[data-color="blue"] .shane_tm_topbar .menu ul li.current a{color: #4169e1;}
+.shane_tm_all_wrap[data-color="blue"] .shane_tm_topbar .menu ul li a:hover{color: #4169e1;}
+.shane_tm_all_wrap[data-color="blue"] .shane_tm_hero .content h3{color: #4169e1;}
+.shane_tm_all_wrap[data-color="blue"] .shane_tm_hero .content h3 span{-webkit-text-stroke: 1px #4169e1;}
+.shane_tm_all_wrap[data-color="blue"] .shane_tm_title span{background-color:rgba(65,105,225,.05);}
+.shane_tm_all_wrap[data-color="blue"] .shane_tm_button a{background-color:#4169e1;border-color: #4169e1;}
+.shane_tm_all_wrap[data-color="blue"] .shane_tm_button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="blue"] .shane_tm_portfolio .portfolio_filter ul li a.current{color: #4169e1;}
+.shane_tm_all_wrap[data-color="blue"] .shane_tm_portfolio .portfolio_filter ul li a:hover{color: #4169e1;}
+.shane_tm_all_wrap[data-color="blue"] .progress_inner .background .bar_in{background: #4169e1;}
+.shane_tm_all_wrap[data-color="blue"] .shane_tm_business_video .rounded{background-color: #4169e1;}
+.shane_tm_all_wrap[data-color="blue"] .shane_tm_business_video .rounded:before{border-color: transparent transparent transparent #fff;}
+.shane_tm_all_wrap[data-color="blue"] .shane_tm_video_button a{border-color: #4169e1;}
+.shane_tm_all_wrap[data-color="blue"] .shane_tm_video_button a:hover{background-color:#4169e1;color: #fff;}
+.shane_tm_all_wrap[data-color="blue"] .shane_tm_news .news_list ul li .details .title a:hover{color: #4169e1;}
+.shane_tm_all_wrap[data-color="blue"] .shane_tm_news .news_list ul li .details .date a:hover{color: #4169e1;}
+.shane_tm_all_wrap[data-color="blue"] .shane_tm_talk .button a{background-color: #4169e1;color: #fff;border-color: #4169e1;}
+.shane_tm_all_wrap[data-color="blue"] .shane_tm_talk .button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="blue"] .shane_tm_modalbox_news .description blockquote{border-color:#4169e1;}
+.shane_tm_all_wrap[data-color="blue"] .cursor-inner.cursor-hover{background-color: #4169e1;}
+.shane_tm_all_wrap[data-color="blue"] .cursor-outer{border-color: #4169e1;}
+.shane_tm_all_wrap[data-color="blue"] .cursor-inner{background-color: #4169e1;}
+.shane_tm_all_wrap[data-color="blue"] .overlay_effect:before{background-color: #4169e1;}
+
+
+.shane_tm_all_wrap[data-color="green"] .shane_tm_topbar .menu ul li.current a{color: #66B95C;}
+.shane_tm_all_wrap[data-color="green"] .shane_tm_topbar .menu ul li a:hover{color: #66B95C;}
+.shane_tm_all_wrap[data-color="green"] .shane_tm_hero .content h3{color: #66B95C;}
+.shane_tm_all_wrap[data-color="green"] .shane_tm_hero .content h3 span{-webkit-text-stroke: 1px #66B95C;}
+.shane_tm_all_wrap[data-color="green"] .shane_tm_title span{background-color:rgba(102,185,92,.05);}
+.shane_tm_all_wrap[data-color="green"] .shane_tm_button a{background-color:#66B95C;border-color: #66B95C;}
+.shane_tm_all_wrap[data-color="green"] .shane_tm_button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="green"] .shane_tm_portfolio .portfolio_filter ul li a.current{color: #66B95C;}
+.shane_tm_all_wrap[data-color="green"] .shane_tm_portfolio .portfolio_filter ul li a:hover{color: #66B95C;}
+.shane_tm_all_wrap[data-color="green"] .progress_inner .background .bar_in{background: #66B95C;}
+.shane_tm_all_wrap[data-color="green"] .shane_tm_business_video .rounded{background-color: #66B95C;}
+.shane_tm_all_wrap[data-color="green"] .shane_tm_business_video .rounded:before{border-color: transparent transparent transparent #fff;}
+.shane_tm_all_wrap[data-color="green"] .shane_tm_video_button a{border-color: #66B95C;}
+.shane_tm_all_wrap[data-color="green"] .shane_tm_video_button a:hover{background-color:#66B95C;color: #fff;}
+.shane_tm_all_wrap[data-color="green"] .shane_tm_news .news_list ul li .details .title a:hover{color: #66B95C;}
+.shane_tm_all_wrap[data-color="green"] .shane_tm_news .news_list ul li .details .date a:hover{color: #66B95C;}
+.shane_tm_all_wrap[data-color="green"] .shane_tm_talk .button a{background-color: #66B95C;color: #fff;border-color: #66B95C;}
+.shane_tm_all_wrap[data-color="green"] .shane_tm_talk .button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="green"] .shane_tm_modalbox_news .description blockquote{border-color:#66B95C;}
+.shane_tm_all_wrap[data-color="green"] .cursor-inner.cursor-hover{background-color: #66B95C;}
+.shane_tm_all_wrap[data-color="green"] .cursor-outer{border-color: #66B95C;}
+.shane_tm_all_wrap[data-color="green"] .cursor-inner{background-color: #66B95C;}
+.shane_tm_all_wrap[data-color="green"] .overlay_effect:before{background-color: #66B95C;}
+
+
+.shane_tm_all_wrap[data-color="brown"] .shane_tm_topbar .menu ul li.current a{color: #ff9800;}
+.shane_tm_all_wrap[data-color="brown"] .shane_tm_topbar .menu ul li a:hover{color: #ff9800;}
+.shane_tm_all_wrap[data-color="brown"] .shane_tm_hero .content h3{color: #ff9800;}
+.shane_tm_all_wrap[data-color="brown"] .shane_tm_hero .content h3 span{-webkit-text-stroke: 1px #ff9800;}
+.shane_tm_all_wrap[data-color="brown"] .shane_tm_title span{background-color:rgba(255,152,0,.05);}
+.shane_tm_all_wrap[data-color="brown"] .shane_tm_button a{background-color:#ff9800;border-color: #ff9800;}
+.shane_tm_all_wrap[data-color="brown"] .shane_tm_button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="brown"] .shane_tm_portfolio .portfolio_filter ul li a.current{color: #ff9800;}
+.shane_tm_all_wrap[data-color="brown"] .shane_tm_portfolio .portfolio_filter ul li a:hover{color: #ff9800;}
+.shane_tm_all_wrap[data-color="brown"] .progress_inner .background .bar_in{background: #ff9800;}
+.shane_tm_all_wrap[data-color="brown"] .shane_tm_business_video .rounded{background-color: #ff9800;}
+.shane_tm_all_wrap[data-color="brown"] .shane_tm_business_video .rounded:before{border-color: transparent transparent transparent #fff;}
+.shane_tm_all_wrap[data-color="brown"] .shane_tm_video_button a{border-color: #ff9800;}
+.shane_tm_all_wrap[data-color="brown"] .shane_tm_video_button a:hover{background-color:#ff9800;color: #fff;}
+.shane_tm_all_wrap[data-color="brown"] .shane_tm_news .news_list ul li .details .title a:hover{color: #ff9800;}
+.shane_tm_all_wrap[data-color="brown"] .shane_tm_news .news_list ul li .details .date a:hover{color: #ff9800;}
+.shane_tm_all_wrap[data-color="brown"] .shane_tm_talk .button a{background-color: #ff9800;color: #fff;border-color: #ff9800;}
+.shane_tm_all_wrap[data-color="brown"] .shane_tm_talk .button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="brown"] .shane_tm_modalbox_news .description blockquote{border-color:#ff9800;}
+.shane_tm_all_wrap[data-color="brown"] .cursor-inner.cursor-hover{background-color: #ff9800;}
+.shane_tm_all_wrap[data-color="brown"] .cursor-outer{border-color: #ff9800;}
+.shane_tm_all_wrap[data-color="brown"] .cursor-inner{background-color: #ff9800;}
+.shane_tm_all_wrap[data-color="brown"] .overlay_effect:before{background-color: #ff9800;}
+
+
+.shane_tm_all_wrap[data-color="pink"] .shane_tm_topbar .menu ul li.current a{color: #ff5e94;}
+.shane_tm_all_wrap[data-color="pink"] .shane_tm_topbar .menu ul li a:hover{color: #ff5e94;}
+.shane_tm_all_wrap[data-color="pink"] .shane_tm_hero .content h3{color: #ff5e94;}
+.shane_tm_all_wrap[data-color="pink"] .shane_tm_hero .content h3 span{-webkit-text-stroke: 1px #ff5e94;}
+.shane_tm_all_wrap[data-color="pink"] .shane_tm_title span{background-color:rgba(255,94,148,.05);}
+.shane_tm_all_wrap[data-color="pink"] .shane_tm_button a{background-color:#ff5e94;border-color: #ff5e94;}
+.shane_tm_all_wrap[data-color="pink"] .shane_tm_button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="pink"] .shane_tm_portfolio .portfolio_filter ul li a.current{color: #ff5e94;}
+.shane_tm_all_wrap[data-color="pink"] .shane_tm_portfolio .portfolio_filter ul li a:hover{color: #ff5e94;}
+.shane_tm_all_wrap[data-color="pink"] .progress_inner .background .bar_in{background: #ff5e94;}
+.shane_tm_all_wrap[data-color="pink"] .shane_tm_business_video .rounded{background-color: #ff5e94;}
+.shane_tm_all_wrap[data-color="pink"] .shane_tm_business_video .rounded:before{border-color: transparent transparent transparent #fff;}
+.shane_tm_all_wrap[data-color="pink"] .shane_tm_video_button a{border-color: #ff5e94;}
+.shane_tm_all_wrap[data-color="pink"] .shane_tm_video_button a:hover{background-color:#ff5e94;color: #fff;}
+.shane_tm_all_wrap[data-color="pink"] .shane_tm_news .news_list ul li .details .title a:hover{color: #ff5e94;}
+.shane_tm_all_wrap[data-color="pink"] .shane_tm_news .news_list ul li .details .date a:hover{color: #ff5e94;}
+.shane_tm_all_wrap[data-color="pink"] .shane_tm_talk .button a{background-color: #ff5e94;color: #fff;border-color: #ff5e94;}
+.shane_tm_all_wrap[data-color="pink"] .shane_tm_talk .button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="pink"] .shane_tm_modalbox_news .description blockquote{border-color:#ff5e94;}
+.shane_tm_all_wrap[data-color="pink"] .cursor-inner.cursor-hover{background-color: #ff5e94;}
+.shane_tm_all_wrap[data-color="pink"] .cursor-outer{border-color: #ff5e94;}
+.shane_tm_all_wrap[data-color="pink"] .cursor-inner{background-color: #ff5e94;}
+.shane_tm_all_wrap[data-color="pink"] .overlay_effect:before{background-color: #ff5e94;}
+
+
+.shane_tm_all_wrap[data-color="orange"] .shane_tm_topbar .menu ul li.current a{color: #fa5b0f;}
+.shane_tm_all_wrap[data-color="orange"] .shane_tm_topbar .menu ul li a:hover{color: #fa5b0f;}
+.shane_tm_all_wrap[data-color="orange"] .shane_tm_hero .content h3{color: #fa5b0f;}
+.shane_tm_all_wrap[data-color="orange"] .shane_tm_hero .content h3 span{-webkit-text-stroke: 1px #fa5b0f;}
+.shane_tm_all_wrap[data-color="orange"] .shane_tm_title span{background-color:rgba(250,91,15,.05);}
+.shane_tm_all_wrap[data-color="orange"] .shane_tm_button a{background-color:#fa5b0f;border-color: #fa5b0f;}
+.shane_tm_all_wrap[data-color="orange"] .shane_tm_button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="orange"] .shane_tm_portfolio .portfolio_filter ul li a.current{color: #fa5b0f;}
+.shane_tm_all_wrap[data-color="orange"] .shane_tm_portfolio .portfolio_filter ul li a:hover{color: #fa5b0f;}
+.shane_tm_all_wrap[data-color="orange"] .progress_inner .background .bar_in{background: #fa5b0f;}
+.shane_tm_all_wrap[data-color="orange"] .shane_tm_business_video .rounded{background-color: #fa5b0f;}
+.shane_tm_all_wrap[data-color="orange"] .shane_tm_business_video .rounded:before{border-color: transparent transparent transparent #fff;}
+.shane_tm_all_wrap[data-color="orange"] .shane_tm_video_button a{border-color: #fa5b0f;}
+.shane_tm_all_wrap[data-color="orange"] .shane_tm_video_button a:hover{background-color:#fa5b0f;color: #fff;}
+.shane_tm_all_wrap[data-color="orange"] .shane_tm_news .news_list ul li .details .title a:hover{color: #fa5b0f;}
+.shane_tm_all_wrap[data-color="orange"] .shane_tm_news .news_list ul li .details .date a:hover{color: #fa5b0f;}
+.shane_tm_all_wrap[data-color="orange"] .shane_tm_talk .button a{background-color: #fa5b0f;color: #fff;border-color: #fa5b0f;}
+.shane_tm_all_wrap[data-color="orange"] .shane_tm_talk .button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="orange"] .shane_tm_modalbox_news .description blockquote{border-color:#fa5b0f;}
+.shane_tm_all_wrap[data-color="orange"] .cursor-inner.cursor-hover{background-color: #fa5b0f;}
+.shane_tm_all_wrap[data-color="orange"] .cursor-outer{border-color: #fa5b0f;}
+.shane_tm_all_wrap[data-color="orange"] .cursor-inner{background-color: #fa5b0f;}
+.shane_tm_all_wrap[data-color="orange"] .overlay_effect:before{background-color: #fa5b0f;}
+
+
+.shane_tm_all_wrap[data-color="black"] .shane_tm_topbar .menu ul li.current a{color: #000;}
+.shane_tm_all_wrap[data-color="black"] .shane_tm_topbar .menu ul li a:hover{color: #000;}
+.shane_tm_all_wrap[data-color="black"] .shane_tm_hero .content h3{color: #000;}
+.shane_tm_all_wrap[data-color="black"] .shane_tm_hero .content h3 span{-webkit-text-stroke: 1px #000;}
+.shane_tm_all_wrap[data-color="black"] .shane_tm_title span{background-color:rgba(0,0,0,.05);}
+.shane_tm_all_wrap[data-color="black"] .shane_tm_button a{background-color:#000;border-color: #000;}
+.shane_tm_all_wrap[data-color="black"] .shane_tm_button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="black"] .shane_tm_portfolio .portfolio_filter ul li a.current{color: #000;}
+.shane_tm_all_wrap[data-color="black"] .shane_tm_portfolio .portfolio_filter ul li a:hover{color: #000;}
+.shane_tm_all_wrap[data-color="black"] .progress_inner .background .bar_in{background: #000;}
+.shane_tm_all_wrap[data-color="black"] .shane_tm_business_video .rounded{background-color: #fff;}
+.shane_tm_all_wrap[data-color="black"] .shane_tm_business_video .rounded:before{border-color: transparent transparent transparent #000;}
+.shane_tm_all_wrap[data-color="black"] .shane_tm_video_button a{border-color: #fff;}
+.shane_tm_all_wrap[data-color="black"] .shane_tm_video_button a:hover{background-color:#fff;color: #000;}
+.shane_tm_all_wrap[data-color="black"] .shane_tm_news .news_list ul li .details .title a:hover{color: #000;}
+.shane_tm_all_wrap[data-color="black"] .shane_tm_news .news_list ul li .details .date a:hover{color: #000;}
+.shane_tm_all_wrap[data-color="black"] .shane_tm_talk .button a{background-color: #fff;color: #000;border-color: #fff;}
+.shane_tm_all_wrap[data-color="black"] .shane_tm_talk .button a:hover{background-color:transparent;color: #fff;}
+.shane_tm_all_wrap[data-color="black"] .shane_tm_modalbox_news .description blockquote{border-color:#000;}
+.shane_tm_all_wrap[data-color="black"] .cursor-inner.cursor-hover{background-color: #000;}
+.shane_tm_all_wrap[data-color="black"] .cursor-outer{border-color: #000;}
+.shane_tm_all_wrap[data-color="black"] .cursor-inner{background-color: #000;}
+.shane_tm_all_wrap[data-color="black"] .overlay_effect:before{background-color: #000;}
+
+
+.shane_tm_all_wrap[data-color="white"] .shane_tm_topbar .menu ul li.current a{color: #fff;}
+.shane_tm_all_wrap[data-color="white"] .shane_tm_topbar .menu ul li a:hover{color: #fff;}
+.shane_tm_all_wrap[data-color="white"] .shane_tm_hero .content h3{color: #fff;}
+.shane_tm_all_wrap[data-color="white"] .shane_tm_hero .content h3 span{-webkit-text-stroke: 1px #fff;}
+.shane_tm_all_wrap[data-color="white"] .shane_tm_title span{background-color:rgba(0,0,0,.05);}
+.shane_tm_all_wrap[data-color="white"] .shane_tm_button a{background-color:#fff;border-color: #fff;}
+.shane_tm_all_wrap[data-color="white"] .shane_tm_button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="white"] .shane_tm_portfolio .portfolio_filter ul li a.current{color: #fff;}
+.shane_tm_all_wrap[data-color="white"] .shane_tm_portfolio .portfolio_filter ul li a:hover{color: #fff;}
+.shane_tm_all_wrap[data-color="white"] .progress_inner .background .bar_in{background: #fff;}
+.shane_tm_all_wrap[data-color="white"] .shane_tm_business_video .rounded{background-color: #fff;}
+.shane_tm_all_wrap[data-color="white"] .shane_tm_business_video .rounded:before{border-color: transparent transparent transparent #fff;}
+.shane_tm_all_wrap[data-color="white"] .shane_tm_video_button a{border-color: #fff;}
+.shane_tm_all_wrap[data-color="white"] .shane_tm_video_button a:hover{background-color:#fff;color: #fff;}
+.shane_tm_all_wrap[data-color="white"] .shane_tm_news .news_list ul li .details .title a:hover{color: #fff;}
+.shane_tm_all_wrap[data-color="white"] .shane_tm_news .news_list ul li .details .date a:hover{color: #fff;}
+.shane_tm_all_wrap[data-color="white"] .shane_tm_talk .button a{background-color: #fff;color: #000;border-color: #fff;}
+.shane_tm_all_wrap[data-color="white"] .shane_tm_talk .button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="white"] .shane_tm_modalbox_news .description blockquote{border-color:#fff;}
+.shane_tm_all_wrap[data-color="white"] .cursor-inner.cursor-hover{background-color: #fff;}
+.shane_tm_all_wrap[data-color="white"] .cursor-outer{border-color: #fff;}
+.shane_tm_all_wrap[data-color="white"] .cursor-inner{background-color: #fff;}
+.shane_tm_all_wrap[data-color="white"] .overlay_effect:before{background-color: #fff;}
+
+
+.shane_tm_all_wrap[data-color="purple"] .shane_tm_topbar .menu ul li.current a{color: #9200ee;}
+.shane_tm_all_wrap[data-color="purple"] .shane_tm_topbar .menu ul li a:hover{color: #9200ee;}
+.shane_tm_all_wrap[data-color="purple"] .shane_tm_hero .content h3{color: #9200ee;}
+.shane_tm_all_wrap[data-color="purple"] .shane_tm_hero .content h3 span{-webkit-text-stroke: 1px #9200ee;}
+.shane_tm_all_wrap[data-color="purple"] .shane_tm_title span{background-color:rgba(0,0,0,.05);}
+.shane_tm_all_wrap[data-color="purple"] .shane_tm_button a{background-color:#9200ee;border-color: #9200ee;}
+.shane_tm_all_wrap[data-color="purple"] .shane_tm_button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="purple"] .shane_tm_portfolio .portfolio_filter ul li a.current{color: #9200ee;}
+.shane_tm_all_wrap[data-color="purple"] .shane_tm_portfolio .portfolio_filter ul li a:hover{color: #9200ee;}
+.shane_tm_all_wrap[data-color="purple"] .progress_inner .background .bar_in{background: #9200ee;}
+.shane_tm_all_wrap[data-color="purple"] .shane_tm_business_video .rounded{background-color: #9200ee;}
+.shane_tm_all_wrap[data-color="purple"] .shane_tm_business_video .rounded:before{border-color: transparent transparent transparent #fff;}
+.shane_tm_all_wrap[data-color="purple"] .shane_tm_video_button a{border-color: #9200ee;}
+.shane_tm_all_wrap[data-color="purple"] .shane_tm_video_button a:hover{background-color:#9200ee;color: #fff;}
+.shane_tm_all_wrap[data-color="purple"] .shane_tm_news .news_list ul li .details .title a:hover{color: #9200ee;}
+.shane_tm_all_wrap[data-color="purple"] .shane_tm_news .news_list ul li .details .date a:hover{color: #9200ee;}
+.shane_tm_all_wrap[data-color="purple"] .shane_tm_talk .button a{background-color: #9200ee;color: #fff;border-color: #9200ee;}
+.shane_tm_all_wrap[data-color="purple"] .shane_tm_talk .button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="purple"] .shane_tm_modalbox_news .description blockquote{border-color:#9200ee;}
+.shane_tm_all_wrap[data-color="purple"] .cursor-inner.cursor-hover{background-color: #9200ee;}
+.shane_tm_all_wrap[data-color="purple"] .cursor-outer{border-color: #9200ee;}
+.shane_tm_all_wrap[data-color="purple"] .cursor-inner{background-color: #9200ee;}
+.shane_tm_all_wrap[data-color="purple"] .overlay_effect:before{background-color: #9200ee;}
+
+
+.shane_tm_all_wrap[data-color="sky"] .shane_tm_topbar .menu ul li.current a{color: #00D4BD;}
+.shane_tm_all_wrap[data-color="sky"] .shane_tm_topbar .menu ul li a:hover{color: #00D4BD;}
+.shane_tm_all_wrap[data-color="sky"] .shane_tm_hero .content h3{color: #00D4BD;}
+.shane_tm_all_wrap[data-color="sky"] .shane_tm_hero .content h3 span{-webkit-text-stroke: 1px #00D4BD;}
+.shane_tm_all_wrap[data-color="sky"] .shane_tm_title span{background-color:rgba(0,212,189,.05);}
+.shane_tm_all_wrap[data-color="sky"] .shane_tm_button a{background-color:#00D4BD;border-color: #00D4BD;}
+.shane_tm_all_wrap[data-color="sky"] .shane_tm_button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="sky"] .shane_tm_portfolio .portfolio_filter ul li a.current{color: #00D4BD;}
+.shane_tm_all_wrap[data-color="sky"] .shane_tm_portfolio .portfolio_filter ul li a:hover{color: #00D4BD;}
+.shane_tm_all_wrap[data-color="sky"] .progress_inner .background .bar_in{background: #00D4BD;}
+.shane_tm_all_wrap[data-color="sky"] .shane_tm_business_video .rounded{background-color: #00D4BD;}
+.shane_tm_all_wrap[data-color="sky"] .shane_tm_business_video .rounded:before{border-color: transparent transparent transparent #fff;}
+.shane_tm_all_wrap[data-color="sky"] .shane_tm_video_button a{border-color: #00D4BD;}
+.shane_tm_all_wrap[data-color="sky"] .shane_tm_video_button a:hover{background-color:#00D4BD;color: #fff;}
+.shane_tm_all_wrap[data-color="sky"] .shane_tm_news .news_list ul li .details .title a:hover{color: #00D4BD;}
+.shane_tm_all_wrap[data-color="sky"] .shane_tm_news .news_list ul li .details .date a:hover{color: #00D4BD;}
+.shane_tm_all_wrap[data-color="sky"] .shane_tm_talk .button a{background-color: #00D4BD;color: #fff;border-color: #00D4BD;}
+.shane_tm_all_wrap[data-color="sky"] .shane_tm_talk .button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="sky"] .shane_tm_modalbox_news .description blockquote{border-color:#00D4BD;}
+.shane_tm_all_wrap[data-color="sky"] .cursor-inner.cursor-hover{background-color: #00D4BD;}
+.shane_tm_all_wrap[data-color="sky"] .cursor-outer{border-color: #00D4BD;}
+.shane_tm_all_wrap[data-color="sky"] .cursor-inner{background-color: #00D4BD;}
+.shane_tm_all_wrap[data-color="sky"] .overlay_effect:before{background-color: #00D4BD;}
+
+
+.shane_tm_all_wrap[data-color="cadetBlue"] .shane_tm_topbar .menu ul li.current a{color: #5e9e9f;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .shane_tm_topbar .menu ul li a:hover{color: #5e9e9f;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .shane_tm_hero .content h3{color: #5e9e9f;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .shane_tm_hero .content h3 span{-webkit-text-stroke: 1px #5e9e9f;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .shane_tm_title span{background-color:rgba(94,158,159,.05);}
+.shane_tm_all_wrap[data-color="cadetBlue"] .shane_tm_button a{background-color:#5e9e9f;border-color: #5e9e9f;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .shane_tm_button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .shane_tm_portfolio .portfolio_filter ul li a.current{color: #5e9e9f;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .shane_tm_portfolio .portfolio_filter ul li a:hover{color: #5e9e9f;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .progress_inner .background .bar_in{background: #5e9e9f;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .shane_tm_business_video .rounded{background-color: #5e9e9f;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .shane_tm_business_video .rounded:before{border-color: transparent transparent transparent #fff;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .shane_tm_video_button a{border-color: #5e9e9f;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .shane_tm_video_button a:hover{background-color:#5e9e9f;color: #fff;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .shane_tm_news .news_list ul li .details .title a:hover{color: #5e9e9f;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .shane_tm_news .news_list ul li .details .date a:hover{color: #5e9e9f;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .shane_tm_talk .button a{background-color: #5e9e9f;color: #fff;border-color: #5e9e9f;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .shane_tm_talk .button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .shane_tm_modalbox_news .description blockquote{border-color:#5e9e9f;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .cursor-inner.cursor-hover{background-color: #5e9e9f;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .cursor-outer{border-color: #5e9e9f;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .cursor-inner{background-color: #5e9e9f;}
+.shane_tm_all_wrap[data-color="cadetBlue"] .overlay_effect:before{background-color: #5e9e9f;}
+
+
+.shane_tm_all_wrap[data-color="olive"] .shane_tm_topbar .menu ul li.current a{color: #666d41;}
+.shane_tm_all_wrap[data-color="olive"] .shane_tm_topbar .menu ul li a:hover{color: #666d41;}
+.shane_tm_all_wrap[data-color="olive"] .shane_tm_hero .content h3{color: #666d41;}
+.shane_tm_all_wrap[data-color="olive"] .shane_tm_hero .content h3 span{-webkit-text-stroke: 1px #666d41;}
+.shane_tm_all_wrap[data-color="olive"] .shane_tm_title span{background-color:rgba(102,109,65,.05);}
+.shane_tm_all_wrap[data-color="olive"] .shane_tm_button a{background-color:#666d41;border-color: #666d41;}
+.shane_tm_all_wrap[data-color="olive"] .shane_tm_button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="olive"] .shane_tm_portfolio .portfolio_filter ul li a.current{color: #666d41;}
+.shane_tm_all_wrap[data-color="olive"] .shane_tm_portfolio .portfolio_filter ul li a:hover{color: #666d41;}
+.shane_tm_all_wrap[data-color="olive"] .progress_inner .background .bar_in{background: #666d41;}
+.shane_tm_all_wrap[data-color="olive"] .shane_tm_business_video .rounded{background-color: #666d41;}
+.shane_tm_all_wrap[data-color="olive"] .shane_tm_business_video .rounded:before{border-color: transparent transparent transparent #fff;}
+.shane_tm_all_wrap[data-color="olive"] .shane_tm_video_button a{border-color: #666d41;}
+.shane_tm_all_wrap[data-color="olive"] .shane_tm_video_button a:hover{background-color:#666d41;color: #fff;}
+.shane_tm_all_wrap[data-color="olive"] .shane_tm_news .news_list ul li .details .title a:hover{color: #666d41;}
+.shane_tm_all_wrap[data-color="olive"] .shane_tm_news .news_list ul li .details .date a:hover{color: #666d41;}
+.shane_tm_all_wrap[data-color="olive"] .shane_tm_talk .button a{background-color: #666d41;color: #fff;border-color: #666d41;}
+.shane_tm_all_wrap[data-color="olive"] .shane_tm_talk .button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="olive"] .shane_tm_modalbox_news .description blockquote{border-color:#666d41;}
+.shane_tm_all_wrap[data-color="olive"] .cursor-inner.cursor-hover{background-color: #666d41;}
+.shane_tm_all_wrap[data-color="olive"] .cursor-outer{border-color: #666d41;}
+.shane_tm_all_wrap[data-color="olive"] .cursor-inner{background-color: #666d41;}
+.shane_tm_all_wrap[data-color="olive"] .overlay_effect:before{background-color: #666d41;}
+
+
+.shane_tm_all_wrap[data-color="crimson"] .shane_tm_topbar .menu ul li.current a{color: #e54b4b;}
+.shane_tm_all_wrap[data-color="crimson"] .shane_tm_topbar .menu ul li a:hover{color: #e54b4b;}
+.shane_tm_all_wrap[data-color="crimson"] .shane_tm_hero .content h3{color: #e54b4b;}
+.shane_tm_all_wrap[data-color="crimson"] .shane_tm_hero .content h3 span{-webkit-text-stroke: 1px #e54b4b;}
+.shane_tm_all_wrap[data-color="crimson"] .shane_tm_title span{background-color:rgba(229,75,75,.05);}
+.shane_tm_all_wrap[data-color="crimson"] .shane_tm_button a{background-color:#e54b4b;border-color: #e54b4b;}
+.shane_tm_all_wrap[data-color="crimson"] .shane_tm_button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="crimson"] .shane_tm_portfolio .portfolio_filter ul li a.current{color: #e54b4b;}
+.shane_tm_all_wrap[data-color="crimson"] .shane_tm_portfolio .portfolio_filter ul li a:hover{color: #e54b4b;}
+.shane_tm_all_wrap[data-color="crimson"] .progress_inner .background .bar_in{background: #e54b4b;}
+.shane_tm_all_wrap[data-color="crimson"] .shane_tm_business_video .rounded{background-color: #e54b4b;}
+.shane_tm_all_wrap[data-color="crimson"] .shane_tm_business_video .rounded:before{border-color: transparent transparent transparent #fff;}
+.shane_tm_all_wrap[data-color="crimson"] .shane_tm_video_button a{border-color: #e54b4b;}
+.shane_tm_all_wrap[data-color="crimson"] .shane_tm_video_button a:hover{background-color:#e54b4b;color: #fff;}
+.shane_tm_all_wrap[data-color="crimson"] .shane_tm_news .news_list ul li .details .title a:hover{color: #e54b4b;}
+.shane_tm_all_wrap[data-color="crimson"] .shane_tm_news .news_list ul li .details .date a:hover{color: #e54b4b;}
+.shane_tm_all_wrap[data-color="crimson"] .shane_tm_talk .button a{background-color: #e54b4b;color: #fff;border-color: #e54b4b;}
+.shane_tm_all_wrap[data-color="crimson"] .shane_tm_talk .button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="crimson"] .shane_tm_modalbox_news .description blockquote{border-color:#e54b4b;}
+.shane_tm_all_wrap[data-color="crimson"] .cursor-inner.cursor-hover{background-color: #e54b4b;}
+.shane_tm_all_wrap[data-color="crimson"] .cursor-outer{border-color: #e54b4b;}
+.shane_tm_all_wrap[data-color="crimson"] .cursor-inner{background-color: #e54b4b;}
+.shane_tm_all_wrap[data-color="crimson"] .overlay_effect:before{background-color: #e54b4b;}
+
+
+.shane_tm_all_wrap[data-color="red"] .shane_tm_topbar .menu ul li.current a{color: #fe0000;}
+.shane_tm_all_wrap[data-color="red"] .shane_tm_topbar .menu ul li a:hover{color: #fe0000;}
+.shane_tm_all_wrap[data-color="red"] .shane_tm_hero .content h3{color: #fe0000;}
+.shane_tm_all_wrap[data-color="red"] .shane_tm_hero .content h3 span{-webkit-text-stroke: 1px #fe0000;}
+.shane_tm_all_wrap[data-color="red"] .shane_tm_title span{background-color:rgba(254,0,0,.05);}
+.shane_tm_all_wrap[data-color="red"] .shane_tm_button a{background-color:#fe0000;border-color: #fe0000;}
+.shane_tm_all_wrap[data-color="red"] .shane_tm_button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="red"] .shane_tm_portfolio .portfolio_filter ul li a.current{color: #fe0000;}
+.shane_tm_all_wrap[data-color="red"] .shane_tm_portfolio .portfolio_filter ul li a:hover{color: #fe0000;}
+.shane_tm_all_wrap[data-color="red"] .progress_inner .background .bar_in{background: #fe0000;}
+.shane_tm_all_wrap[data-color="red"] .shane_tm_business_video .rounded{background-color: #fe0000;}
+.shane_tm_all_wrap[data-color="red"] .shane_tm_business_video .rounded:before{border-color: transparent transparent transparent #fff;}
+.shane_tm_all_wrap[data-color="red"] .shane_tm_video_button a{border-color: #fe0000;}
+.shane_tm_all_wrap[data-color="red"] .shane_tm_video_button a:hover{background-color:#fe0000;color: #fff;}
+.shane_tm_all_wrap[data-color="red"] .shane_tm_news .news_list ul li .details .title a:hover{color: #fe0000;}
+.shane_tm_all_wrap[data-color="red"] .shane_tm_news .news_list ul li .details .date a:hover{color: #fe0000;}
+.shane_tm_all_wrap[data-color="red"] .shane_tm_talk .button a{background-color: #fe0000;color: #fff;border-color: #fe0000;}
+.shane_tm_all_wrap[data-color="red"] .shane_tm_talk .button a:hover{background-color:transparent;}
+.shane_tm_all_wrap[data-color="red"] .shane_tm_modalbox_news .description blockquote{border-color:#fe0000;}
+.shane_tm_all_wrap[data-color="red"] .cursor-inner.cursor-hover{background-color: #fe0000;}
+.shane_tm_all_wrap[data-color="red"] .cursor-outer{border-color: #fe0000;}
+.shane_tm_all_wrap[data-color="red"] .cursor-inner{background-color: #fe0000;}
+.shane_tm_all_wrap[data-color="red"] .overlay_effect:before{background-color: #fe0000;}
+
