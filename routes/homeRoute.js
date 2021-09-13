@@ -11,14 +11,14 @@ const {createToken} = require("../modules/jwt")
 const expressFileupload = require("express-fileupload");
 const path = require("path")
 const {
-    checkToken
+    validateToken
 } = require("../modules/jwt")
 
 
-router.get("/", (req, res) => {
+router.get("/",async (req, res) => {
     // console.log(req.db);
-    const contact = req.db.contact.find().toArray();
-    
+    const contact = await req.db.contact.find().toArray();
+    console.log(contact)
     res.render("index",{
         contact,
     });
@@ -98,9 +98,9 @@ async function AuthUserMiddleware(req, res, next) { //global middleware
         return
     }
 
-    const isTrust = checkToken(req.cookies.token);
+    const isTrust = validateToken(req.cookies.token);
 
-    console.log(isTrust)
+    // console.log(isTrust)
 
     if (isTrust) {
         req.user = isTrust;
@@ -115,14 +115,19 @@ async function AuthUserMiddleware(req, res, next) { //global middleware
 
 
 router.post("/contact", AuthUserMiddleware,expressFileupload(), async(req,res) =>{
-
-    req.files.file.mv(path.join(__dirname,".." ,"public","files",req.files.file.name));
-
+// console.log(req.body)
+req.files.file.mv(path.join(__dirname,".." ,"public","files",req.files.file.name))
+    console.log(req.files.file.mv,req.files.file)
+    // console.log("salomlar")
     await req.db.contact.insertOne({
         name: req.body.name,
-        file: req.files.file.name,
+        file: req.files.file,
         textarea: req.body.textarea,
+        time: new Date().toLocaleString(),
     })
+    
+    // console.log(req.body,contact)
+    console.log("salom")
 res.redirect("/")
 })
 
