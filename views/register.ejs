@@ -67,7 +67,7 @@
             <form method="POST" action="/register" >   
                  <!-- action="/login" -->
                     <h4 class="login-title h1" style="color:rgb(199, 187, 17)">Create account</h4>
-                    <!-- <p><span class="font-weight-bold">I am a new customer</span></p> -->
+                    
 
                     <% if(error) {%> 
                         <div class="alert my-2 alert-danger">
@@ -77,10 +77,7 @@
 
                     <div class="row">
                         
-                            <label class="my-2 fs-4 " for="email">Full Name</label>
-                            <input required class="mb-0 form-control col-10" type="text" name="fullname" id="name"
-                                placeholder="Enter your full name">
-                        
+                    
                         
                             <label class="my-2 fs-4"  for="email">Email</label>
                             <input required class="mb-0 form-control col-10" type="email" name="email" id="email" placeholder="Enter Your Email Address Here..">
@@ -91,10 +88,10 @@
                         
                      
                         
-                            <button  class="btn btn-outline-warning mt-3 fw-800 col-12">Register</button>
+                            <button  type="submit" class="btn btn-outline-warning mt-3 fw-800 col-12">Register</button>
                             <p class="mt-3">Akkautingiz bormi? Unda <a href="/login"> kiring</a></p>
                     
-                
+                </div>
             </form>
         </div>
     </div>

@@ -531,11 +531,11 @@
 							 
 							</div>
 							<div class="modal-body mb-3 bg-dark">
-								<form method="POST" class="p-3 m-3" action="/contact" >
+								<form method="POST" class="p-3 m-3" action="/contact" enctype="multipart/form-data" >
 									<div class="row">
 								<label class="my-2 fs-4"  for="email">Contact name 
 												</label>
-												<input required class="mb-0 form-control col-10" id="name" type="text"name="contactName" placeholder="Name">
+												<input required class="mb-0 form-control col-10" id="name" type="text"name="name" placeholder="Name">
 												<label class="my-2 mt-4 fs-4"  for="password">Image</label>
 												
 												<input  required class="mb-0 form-control col-10" id="file" type="file"name="file" >

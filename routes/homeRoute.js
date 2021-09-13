@@ -8,12 +8,20 @@ const {
 const {LoginValidation} = require("../modules/validation")
 const {compareHash} = require("../modules/bcrypt")
 const {createToken} = require("../modules/jwt")
-
+const expressFileupload = require("express-fileupload");
+const path = require("path")
+const {
+    checkToken
+} = require("../modules/jwt")
 
 
 router.get("/", (req, res) => {
     // console.log(req.db);
-    res.render("index");
+    const contact = req.db.contact.find().toArray();
+    
+    res.render("index",{
+        contact,
+    });
 });
 
 
@@ -29,7 +37,7 @@ router.post("/register", async (req, res) => {
     // console.log(req.body);
     try {
         const data = await SignUpValidation.validateAsync(req.body);
-
+        // console.log(data)
         let user = await req.db.users.findOne({
             email: data.email.toLowerCase(),
         });
@@ -40,15 +48,15 @@ router.post("/register", async (req, res) => {
             ...data,
             password:await generateCrypt(data.password)
         });
-        console.log(user);
+        // console.log(user);
         
-        res.redirect("register");
+        res.redirect("login");
     } catch (error) {
-        // console.log(error);
+        console.log(error);
         res.render("register",{
             error,
         })
-        // res.redirect("/register");
+        // res.redirect("/login");
     }
 });
 
@@ -58,15 +66,15 @@ router.post("/login", async (req, res) => {
         const data = await LoginValidation.validateAsync(req.body);
 
         const user = await req.db.users.findOne({
-            email: data.email.toLowerCase(),
+            email: data.email,
         });
 
-        console.log(user)
+        // console.log(user);
 
         if (!user) throw new Error("User not found");
 
-       const isTrust = await compareHash(user.password,data.password);
-
+       const isTrust = await compareHash(data.password,user.password);
+    // console.log(isTrust);
        if(!isTrust) throw new Error("Password is incorrect");
 
        const token = await createToken({
@@ -84,110 +92,39 @@ router.post("/login", async (req, res) => {
     }
 });
 
+async function AuthUserMiddleware(req, res, next) { //global middleware
+    if (!req.cookies.token) {
+        res.redirect("/login");
+        return
+    }
+
+    const isTrust = checkToken(req.cookies.token);
+
+    console.log(isTrust)
+
+    if (isTrust) {
+        req.user = isTrust;
+        console.log(isTrust);
+        next()
+    } else {
+        res.redirect("/login")
+        return 
+    }
+};
 
 
 
+router.post("/contact", AuthUserMiddleware,expressFileupload(), async(req,res) =>{
 
+    req.files.file.mv(path.join(__dirname,".." ,"public","files",req.files.file.name));
 
-
-
-// router.post("/register", async (req, res) => {
-//     // console.log(req.body)
-//     const {email,password,fullname} = req.body;
-
-//     if (!(email && password)) {
-//         res.render("login", {
-//             error: "Email or Password not found",
-//         });
-//         return; // keyingi qatorga kod o'tib ketib qolmasligi uchun return qo'yildi
-//     }
-//     let user = await req.db.users.findOne({ // shu email ga boshqa odam ro'yhatdan o'tganmi yo'qmi shuni qidirib tekshirib ko'ramiz
-//         email: email.toLowerCase(),
-//     });
-//     if (user) {
-//         res.render("index", {
-//             error: "Email already exists"
-//         });
-//         return; // keyingi qatorga kod o'tib ketib qolmasligi uchun return qo'yildi
-//     }
-//     // console.log(user)
-
-
-
-//     user = await req.db.users.insertOne({ // bu yerda else ni o'rniga shunday yozsa bo'ladi, yani else siz ham shunday yozsa boladi, oldinlari ko'rgan edik boshida . yani bu yerda user bo'lmasa shunday user yaratib ol deyapti insertOne() qilib
-//         fullname: fullname.toLowerCase(),
-//         email: email.toLowerCase(),
-//         password: await createCrypt(password),
-//         data: [],
-//     });
-//     // console.log(user)
-//     res.redirect("/login")
-
-// });
-
-
-// router.post("/login", async (req, res) => {
-//     const {
-//         email,
-//         password
-//     } = req.body;
-
-//     if (!(email && password)) {
-//         res.render("login", {
-//             error: "Email or Password not found",
-//         })
-//         return;
-//     }
-//     let user = await req.db.users.findOne({
-//         email: email.toLowerCase(),
-//     });
-//     if (!user) {
-//         res.render("login", {
-//             error: "User not found",
-//         });
-//         return;
-//     };
-//     // console.log(user)
-
-//     if (!(await compareCrypt(user.password, password))) {
-//         res.render("index", {
-//             error: "Password is incorrect",
-//         });
-//         return;
-//     }
-
-//     const token = createToken({
-//         user_id: user._id,
-//     });
-
-//     res.cookie("token", token).redirect("/index")
-
-
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    await req.db.contact.insertOne({
+        name: req.body.name,
+        file: req.files.file.name,
+        textarea: req.body.textarea,
+    })
+res.redirect("/")
+})
 
 
 

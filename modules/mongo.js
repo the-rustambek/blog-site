@@ -8,8 +8,10 @@ async function mongodb(){
         await client.connect();
         const db =  await client.db("blog-site");
         const users =  db.collection("users");
+        const contact = db.collection("contact");
         return{ 
             users,
+            contact,
         };
     }
     catch(error){
