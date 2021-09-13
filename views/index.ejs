@@ -529,7 +529,6 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="shane_tm_section">
 		<div class="shane_tm_copyright">
 			<div class="container">
@@ -539,14 +538,51 @@
 			</div>
 		</div>
 	</div>
-	<!-- /COPYRIGHT -->
+
 	
+	<div class="modal fade p-3 w-100 "  id="contactModal" tabindex="-1" aria-labelledby="contactModal" aria-hidden="true">
+		<div class="modal-dialog bg-dark text-warning">
+			<div class="modal-content bg-dark text-warning">
+			  <div class="modal-header ">
+				  <h2 class="text-light">Contact us</h2>
+				  
+				<button type="button" class="btn-close btn-danger text-light p-1  " data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body mb-3 bg-dark">
+				  <form method="POST" class="p-3 m-3" action="/contact" >
+					  <div class="row">
+				  <label class="my-2 fs-4"  for="email">Contact name 
+								  </label>
+								  <input required class="mb-0 form-control col-10" id="name" type="text"name="contactName" placeholder="Name">
+								  <label class="my-2 mt-4 fs-4"  for="password">Image</label>
+								  
+								  <input  required class="mb-0 form-control col-10" id="file" type="file"name="file" >
+								  
+									<label for="floatingTextarea"class="my-2 fs-4"  for="textarea">Comments</label>
+									<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="textarea" required></textarea>
+									
+								  
+								  <button type="submit"  class="btn btn-outline-warning mt-4 fw-800 col-12">Send Messages</button>
+								  
+								  <!-- <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+									  Login
+									</button> -->
+								  
+				  </form>
+			  </div>
+	  
+			</div>
+		  </div>
+		</div>
+
+	<!-- /COPYRIGHT -->
+
 	<!-- CURSOR -->
 	<div class="mouse-cursor cursor-outer"></div>
     <div class="mouse-cursor cursor-inner"></div>
 	<!-- /CURSOR -->
 	
-</div>
+
 <!-- 
 <div class="shane_tm_mobalbox_contact" class="modal fade " style="height:100vh; width:100vw;" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 
@@ -609,88 +645,6 @@
 	</div>
   </div> 
 
-  <div class="modal fade "  id="contactModal" tabindex="-1" aria-labelledby="contactModal" aria-hidden="true">
-	<div class="modal-dialog box_inner">
-		<div class="close">
-			<a href="#"><img class="svg" src="img/svg/cancel.svg" alt="" /></a>
-		</div>
-		<div class="description_wrap scrollable">
-			<div class="title">
-				<h3>Get in touch</h3>
-			</div>
-			<div class="wrapper">
-				<div class="left">
-					<div class="fields">
-						<form action="/" method="post" class="contact_form" id="contact_form" autocomplete="off">
-							<div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
-							<div class="empty_notice"><span>Please Fill Required Fields</span></div>
-							<div class="first">
-								<ul>
-									<li>
-										<input id="name" type="text" placeholder="Name">
-									</li>
-									<li>
-										<input id="email" type="text" placeholder="Email">
-									</li>
-									
-									<li>
-										<input id="file" type="file" placeholder="Email">
-									</li>
-								</ul>
-							</div>
-							<div class="last">
-								<textarea id="message" placeholder="Message"></textarea>
-							</div>
-							<div class="shane_tm_button" data-position="left">
-								<a id="send_message" href="#">
-									<span>Send Message</span>
-								</a>
-							</div>
-
-						
-
-						</form>
-					</div>
-				</div>
-				<div class="right">
-					<div class="map_wrap">
-						<div class="map" id="ieatmaps"></div>
-					</div>
-				</div>	
-			</div>	
-			<div class="short_info">
-				<ul>
-					<li>
-						<div class="list_inner">
-							<img class="svg" src="img/svg/location.svg" alt="" />
-							<p>Brook 103, 90021 New York, USA</p>
-						</div>
-					</li>
-					<li>
-						<div class="list_inner">
-							<img class="svg" src="img/svg/phone.svg" alt="" />
-							<p><a href="tel:+77 033 442 55 57">+77 033 442 55 57</a></p>
-						</div>
-					</li>
-					<li>
-						<div class="list_inner">
-							<img class="svg" src="img/svg/share.svg" alt="" />
-							<ul class="social">
-								<li><a href="#"><img class="svg" src="img/svg/social/facebook.svg"></a></li>
-								<li><a href="#"><img class="svg" src="img/svg/social/twitter.svg"></a></li>
-								<li><a href="#"><img class="svg" src="img/svg/social/instagram.svg"></a></li>
-								<li><a href="#"><img class="svg" src="img/svg/social/dribbble.svg"></a></li>
-								<li><a href="#"><img class="svg" src="img/svg/social/tik-tok.svg"></a></li>
-								
-								
-								
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>  </div> 
 	
 <!-- SCRIPTS -->
 <script src="js/jquery.js"></script>
