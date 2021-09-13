@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="description" content="Name of your web site">
+<meta name="author" content="Marketify">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Shane | Home</title>
+
+<!-- STYLES -->
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="css/plugins.css" />
+<link rel="stylesheet" type="text/css" href="css/colors.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
+<!-- /STYLES -->
+
+</head>
+
+<body class="bg-dark">
+	
+	<!-- PRELOADER -->
+	<div id="preloader">
+		<div class="loader_line"></div>
+	</div>
+	<!-- /PRELOADER -->
+	
+<!-- WRAPPER ALL -->
+<div class="shane_tm_all_wrap" data-magic-cursor="" data-color="black">
+	
+    <div class="shane_tm_modalbox_news">
+		<div class="box_inner">
+			<div class="close">
+				<a href="#"><img class="svg" src="img/svg/cancel.svg" alt="" /></a>
+			</div>
+			<div class="description_wrap scrollable">
+			</div>
+		</div>
+	</div>
+	<!-- /MODALBOX NEWS -->
+	
+	<!-- MOBILE MENU -->
+	
+ 
+<% var error %> 
+
+<!-- registration -->
+
+
+<div class="reg" >
+    <div  class="container text-light d-flex justify-content-center align-items-center flex-direction-column " style="height:100vh;width:40vw;" >
+        
+            <!-- reg Form s-->
+
+            <form method="POST" action="/register" >   
+                 <!-- action="/login" -->
+                    <h4 class="login-title h1" style="color:rgb(199, 187, 17)">Create account</h4>
+                    <!-- <p><span class="font-weight-bold">I am a new customer</span></p> -->
+
+                    <% if(error) {%> 
+                        <div class="alert my-2 alert-danger">
+                            <%= error  %> 
+                        </div>
+                    <% } %> 
+
+                    <div class="row">
+                        
+                            <label class="my-2 fs-4 " for="email">Full Name</label>
+                            <input required class="mb-0 form-control col-10" type="text" name="fullname" id="name"
+                                placeholder="Enter your full name">
+                        
+                        
+                            <label class="my-2 fs-4"  for="email">Email</label>
+                            <input required class="mb-0 form-control col-10" type="email" name="email" id="email" placeholder="Enter Your Email Address Here..">
+                        
+                        
+                            <label class="my-2 fs-4"  for="password">Password</label>
+                            <input required class="mb-0 form-control col-10" name="password" type="password" id="password" placeholder="Enter your password">
+                        
+                     
+                        
+                            <button  class="btn btn-outline-warning mt-3 fw-800 col-12">Register</button>
+                            <p class="mt-3">Akkautingiz bormi? Unda <a href="/login"> kiring</a></p>
+                    
+                
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+    
+
+
+      
+	<!-- CURSOR -->
+	<div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+	<!-- /CURSOR -->
+	
+</div>
+
+
+
+	
+<!-- SCRIPTS -->
+<script src="js/jquery.js"></script>
+<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->	
+<script src="js/plugins.js"></script>
+<script src="js/init.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5bpEs3xlB8vhxNFErwoo3MXR64uavf6Y&callback=initMap"></script>
+<!-- /SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

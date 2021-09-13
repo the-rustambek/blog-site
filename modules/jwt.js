@@ -1,6 +1,6 @@
 const {sign, verify} = require("jsonwebtoken");
 
-const SECRET_WORD =  process.env,SECRET_WORD;
+const SECRET_WORD =  process.env.SECRET_WORD;
 
 async function createToken(data){
     return sign(data, SECRET_WORD,{

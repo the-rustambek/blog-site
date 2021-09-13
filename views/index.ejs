@@ -83,7 +83,7 @@
 						<li><a href="#portfolio">Portfolio</a></li>
 						<li><a href="#blogs">Blogs</a></li>
 						<li><a href="#contact">Contact</a></li>
-						<li><a href="#login">Login</a></li>
+						<li><a href="./login">Login</a></li>
 					</ul>
 				</div>
 			</div>
@@ -105,9 +105,7 @@
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#blogs">Blogs</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-						Login
-					  </button></li>
+					<li><a href="./login">Login</a></li>
 				</ul>
 			</div>
 		</div>
@@ -524,9 +522,9 @@
 				<div class="text">
 					<h3>Let's work together!</h3>
 				</div>
-				<div class=" d-flex justify-content-center align-items-center flex-column w-50">
-						<!-- <button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Contact us</button> -->
-						<div class="modal-content bg-dark text-warning">
+				<div class=" d-flex justify-content-center align-items-center flex-column w-50" >
+						<!-- <button  type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Contact us</button> -->
+						<div class="modal-content  text-warning" style="background-color:black; ">  
 							<div class="modal-header ">
 								<h2 class="text-warning">Contact us</h2>
 								
@@ -542,13 +540,13 @@
 												
 												<input  required class="mb-0 form-control col-10" id="file" type="file"name="file" >
 												
-												  <label for="floatingTextarea"class="my-2 fs-4"  for="textarea">Comments</label>
+												  <label for="floatingTextarea"class="my-2  mt-3 fs-4"  for="textarea">Comments</label>
 												  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="textarea" required></textarea>
 												  
 												
 												<button type="submit"  class="btn btn-outline-warning mt-4 fw-800 col-12">Send Messages</button>
 												
-												<!-- <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+												<!-- <button type="button" class="btn btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
 													Login
 												  </button> -->
 												
@@ -571,64 +569,8 @@
 		</div>
 	</div>
 
-	<!-- login -->
-<div class="modal fade " style="height:100vh; width:100vw;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog bg-dark text-warning">
-	  <div class="modal-content bg-dark text-warning">
-		<div class="modal-header ">
-			<h2 class="text-light">Login</h2>
-			
-		  <button type="button" class="btn-close btn-danger text-light " data-bs-dismiss="modal" aria-label="Close"></button>
-		</div>
-		<div class="modal-body mb-3 bg-dark">
-			<form method="POST" class="p-1" action="/login" >
-				<div class="row">
-			<label class="my-2 fs-4"  for="email">Email address 
-							</label>
-							<input required class="mb-0 form-control col-10" type="email"name="email" id="email" placeholder="Email address ">
-							<label class="my-2 mt-4 fs-4"  for="password">Password</label>
-							<input required class="mb-0 form-control col-10"name="password" type="password" id="password" placeholder="Enter your password">
-							<button  class="btn btn-outline-warning mt-4 fw-800 col-12">Login</button>
-							
-							 <button  type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#regModal" > Create account</button>
-							
-			</form>
-		</div>
 
-	  </div>
-	</div>
-  </div> 
 
-<!-- registration -->
-  <div class="modal fade " style="height:100vh; width:100vw;" id="regModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog bg-dark text-warning">
-	  <div class="modal-content bg-dark text-warning">
-		<div class="modal-header ">
-			<h2 class="text-light">Registration</h2>
-			
-		  <button type="button" class="btn-close btn-danger text-light " data-bs-dismiss="modal" aria-label="Close"></button>
-		</div>
-		<div class="modal-body mb-3 bg-dark">
-			<form method="POST" class="p-3 m-3" action="/register" >
-				<div class="row">
-			<label class="my-2 fs-4"  for="email">Email address 
-							</label>
-							<input required class="mb-0 form-control col-10" type="email"name="email" id="email" placeholder="Email address ">
-							<label class="my-2 mt-4 fs-4"  for="password">Password</label>
-							<input required class="mb-0 form-control col-10"name="password" type="password" id="password" placeholder="Enter your password">
-							<button type="submit"  class="btn btn-outline-warning mt-4 fw-800 col-12">Register</button>
-							
-							<!-- <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
-								Login
-							  </button> -->
-							
-			</form>
-		</div>
-
-	  </div>
-	</div>
-  </div> 
-	
 
 
 		
@@ -640,7 +582,7 @@
     <div class="mouse-cursor cursor-inner"></div>
 	<!-- /CURSOR -->
 	
-
+</div>
 
 
 
