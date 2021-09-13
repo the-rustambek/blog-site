@@ -61,7 +61,8 @@
 			<div class="container bigger">
 				<div class="topbar_in">
 					<div class="logo">
-						<a href="#"><img src="img/logo/new/dark.png" alt="" /></a>
+		 				<a class="text-warning fs-3 text-dark" style="text-decoration:none; font-weight:bolder;" href="#">rustambek.uz</a>
+
 					</div>
 					<div class="my_trigger">
 						<div class="hamburger hamburger--collapse-r">
@@ -94,7 +95,8 @@
 	<div class="shane_tm_topbar">
 		<div class="topbar_inner">
 			<div class="logo">
-				<a href="#"><img src="img/logo/new/dark.png" alt="" /></a>
+				<a class="text-warning fs-3 text-dark" style="text-decoration:none; font-weight:bolder;" href="#">rustambek.uz</a>
+
 			</div>
 			<div class="menu">
 				<ul class="anchor_nav">
@@ -118,8 +120,8 @@
 		</div>
 		<div class="container">
 			<div class="content">
-				<div class="name_wrap"><h3><span>Ave</span> Brook<span class="overlay_effect"></span></h3></div>
-				<div class="job_wrap"><span class="job">Independent Web Developer<span class="overlay_effect"></span></span></div>
+				<div class="name_wrap "><h3 class="d-flex justify-content-between flex-column"><span>Rustambek</span> Mamadaliyev<span class="overlay_effect"></span></h3></div>
+				<div class="job_wrap"><span class="job">Fullstack Web Developer<span class="overlay_effect"></span></span></div>
 			</div>
 			<div class="shane_tm_down" data-skin="dark">
 				<div class="line_wrapper">
@@ -522,8 +524,38 @@
 				<div class="text">
 					<h3>Let's work together!</h3>
 				</div>
-				<div class="">
-						<button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Contact us</button>
+				<div class=" d-flex justify-content-center align-items-center flex-column w-50">
+						<!-- <button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Contact us</button> -->
+						<div class="modal-content bg-dark text-warning">
+							<div class="modal-header ">
+								<h2 class="text-warning">Contact us</h2>
+								
+							 
+							</div>
+							<div class="modal-body mb-3 bg-dark">
+								<form method="POST" class="p-3 m-3" action="/contact" >
+									<div class="row">
+								<label class="my-2 fs-4"  for="email">Contact name 
+												</label>
+												<input required class="mb-0 form-control col-10" id="name" type="text"name="contactName" placeholder="Name">
+												<label class="my-2 mt-4 fs-4"  for="password">Image</label>
+												
+												<input  required class="mb-0 form-control col-10" id="file" type="file"name="file" >
+												
+												  <label for="floatingTextarea"class="my-2 fs-4"  for="textarea">Comments</label>
+												  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="textarea" required></textarea>
+												  
+												
+												<button type="submit"  class="btn btn-outline-warning mt-4 fw-800 col-12">Send Messages</button>
+												
+												<!-- <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+													Login
+												  </button> -->
+												
+								</form>
+							</div>
+					
+						  </div>
 
 				</div>
 			</div>
@@ -539,55 +571,7 @@
 		</div>
 	</div>
 
-	
-	<div class="modal fade p-3 w-100 "  id="contactModal" tabindex="-1" aria-labelledby="contactModal" aria-hidden="true">
-		<div class="modal-dialog bg-dark text-warning">
-			<div class="modal-content bg-dark text-warning">
-			  <div class="modal-header ">
-				  <h2 class="text-light">Contact us</h2>
-				  
-				<button type="button" class="btn-close btn-danger text-light p-1  " data-bs-dismiss="modal" aria-label="Close"></button>
-			  </div>
-			  <div class="modal-body mb-3 bg-dark">
-				  <form method="POST" class="p-3 m-3" action="/contact" >
-					  <div class="row">
-				  <label class="my-2 fs-4"  for="email">Contact name 
-								  </label>
-								  <input required class="mb-0 form-control col-10" id="name" type="text"name="contactName" placeholder="Name">
-								  <label class="my-2 mt-4 fs-4"  for="password">Image</label>
-								  
-								  <input  required class="mb-0 form-control col-10" id="file" type="file"name="file" >
-								  
-									<label for="floatingTextarea"class="my-2 fs-4"  for="textarea">Comments</label>
-									<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="textarea" required></textarea>
-									
-								  
-								  <button type="submit"  class="btn btn-outline-warning mt-4 fw-800 col-12">Send Messages</button>
-								  
-								  <!-- <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
-									  Login
-									</button> -->
-								  
-				  </form>
-			  </div>
-	  
-			</div>
-		  </div>
-		</div>
-
-	<!-- /COPYRIGHT -->
-
-	<!-- CURSOR -->
-	<div class="mouse-cursor cursor-outer"></div>
-    <div class="mouse-cursor cursor-inner"></div>
-	<!-- /CURSOR -->
-	
-
-<!-- 
-<div class="shane_tm_mobalbox_contact" class="modal fade " style="height:100vh; width:100vw;" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-
-</div> -->
-
+	<!-- login -->
 <div class="modal fade " style="height:100vh; width:100vw;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog bg-dark text-warning">
 	  <div class="modal-content bg-dark text-warning">
@@ -597,7 +581,7 @@
 		  <button type="button" class="btn-close btn-danger text-light " data-bs-dismiss="modal" aria-label="Close"></button>
 		</div>
 		<div class="modal-body mb-3 bg-dark">
-			<form method="POST"  action="/login" >
+			<form method="POST" class="p-1" action="/login" >
 				<div class="row">
 			<label class="my-2 fs-4"  for="email">Email address 
 							</label>
@@ -606,7 +590,7 @@
 							<input required class="mb-0 form-control col-10"name="password" type="password" id="password" placeholder="Enter your password">
 							<button  class="btn btn-outline-warning mt-4 fw-800 col-12">Login</button>
 							
-							 <button  style="text-decoration:none;" type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#regModal" > Create account</button>
+							 <button  type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#regModal" > Create account</button>
 							
 			</form>
 		</div>
@@ -615,7 +599,7 @@
 	</div>
   </div> 
 
-
+<!-- registration -->
   <div class="modal fade " style="height:100vh; width:100vw;" id="regModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog bg-dark text-warning">
 	  <div class="modal-content bg-dark text-warning">
@@ -625,7 +609,7 @@
 		  <button type="button" class="btn-close btn-danger text-light " data-bs-dismiss="modal" aria-label="Close"></button>
 		</div>
 		<div class="modal-body mb-3 bg-dark">
-			<form method="POST" class="p-3 m-3" action="/reg" >
+			<form method="POST" class="p-3 m-3" action="/registration" >
 				<div class="row">
 			<label class="my-2 fs-4"  for="email">Email address 
 							</label>
@@ -644,6 +628,21 @@
 	  </div>
 	</div>
   </div> 
+	
+
+
+		
+
+	<!-- /COPYRIGHT -->
+
+	<!-- CURSOR -->
+	<div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+	<!-- /CURSOR -->
+	
+
+
+
 
 	
 <!-- SCRIPTS -->
