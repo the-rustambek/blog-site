@@ -150,7 +150,7 @@
 							<p>I'm web designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
 						</div>
 						<div class="shane_tm_button">
-							<a href="img/resume/resume.jpg" download>Download CV</a>
+							<a href="img/resume.jpg" download>Download CV</a>
 						</div>
 					</div>
 				</div>
@@ -522,101 +522,14 @@
 				<div class="text">
 					<h3>Let's work together!</h3>
 				</div>
-				<div class="button">
-					<a href="#">Contact us</a>
+				<div class="">
+						<button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Contact us</button>
+
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- /TALK -->
-	
-	<!-- MODAL CONTACT -->
-	<div class="shane_tm_mobalbox_contact">
-		<div class="box_inner">
-			<div class="close">
-				<a href="#"><img class="svg" src="img/svg/cancel.svg" alt="" /></a>
-			</div>
-			<div class="description_wrap scrollable">
-				<div class="title">
-					<h3>Get in touch</h3>
-				</div>
-				<div class="wrapper">
-					<div class="left">
-						<div class="fields">
-							<form action="/" method="post" class="contact_form" id="contact_form" autocomplete="off">
-								<div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
-								<div class="empty_notice"><span>Please Fill Required Fields</span></div>
-								<div class="first">
-									<ul>
-										<li>
-											<input id="name" type="text" placeholder="Name">
-										</li>
-										<li>
-											<input id="email" type="text" placeholder="Email">
-										</li>
-										
-										<li>
-											<input id="file" type="file" placeholder="Email">
-										</li>
-									</ul>
-								</div>
-								<div class="last">
-									<textarea id="message" placeholder="Message"></textarea>
-								</div>
-								<div class="shane_tm_button" data-position="left">
-									<a id="send_message" href="#">
-										<span>Send Message</span>
-									</a>
-								</div>
 
-								<!-- If you want to change mail address to yours, please open modal.php and go to line 4 -->
-
-							</form>
-						</div>
-					</div>
-					<div class="right">
-						<div class="map_wrap">
-							<div class="map" id="ieatmaps"></div>
-						</div>
-					</div>	
-				</div>	
-				<div class="short_info">
-					<ul>
-						<li>
-							<div class="list_inner">
-								<img class="svg" src="img/svg/location.svg" alt="" />
-								<p>Brook 103, 90021 New York, USA</p>
-							</div>
-						</li>
-						<li>
-							<div class="list_inner">
-								<img class="svg" src="img/svg/phone.svg" alt="" />
-								<p><a href="tel:+77 033 442 55 57">+77 033 442 55 57</a></p>
-							</div>
-						</li>
-						<li>
-							<div class="list_inner">
-								<img class="svg" src="img/svg/share.svg" alt="" />
-								<ul class="social">
-									<li><a href="#"><img class="svg" src="img/svg/social/facebook.svg"></a></li>
-									<li><a href="#"><img class="svg" src="img/svg/social/twitter.svg"></a></li>
-									<li><a href="#"><img class="svg" src="img/svg/social/instagram.svg"></a></li>
-									<li><a href="#"><img class="svg" src="img/svg/social/dribbble.svg"></a></li>
-									<li><a href="#"><img class="svg" src="img/svg/social/tik-tok.svg"></a></li>
-									
-									<!-- If you want add or change svg images you can download here for free https://www.flaticon.com -->
-									
-								</ul>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- MODAL CONTACT -->
-	
-	<!-- COPYRIGHT -->
 	<div class="shane_tm_section">
 		<div class="shane_tm_copyright">
 			<div class="container">
@@ -634,6 +547,11 @@
 	<!-- /CURSOR -->
 	
 </div>
+<!-- 
+<div class="shane_tm_mobalbox_contact" class="modal fade " style="height:100vh; width:100vw;" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+</div> -->
+
 <div class="modal fade " style="height:100vh; width:100vw;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog bg-dark text-warning">
 	  <div class="modal-content bg-dark text-warning">
@@ -678,7 +596,7 @@
 							<input required class="mb-0 form-control col-10" type="email"name="email" id="email" placeholder="Email address ">
 							<label class="my-2 mt-4 fs-4"  for="password">Password</label>
 							<input required class="mb-0 form-control col-10"name="password" type="password" id="password" placeholder="Enter your password">
-							<a  class="btn btn-outline-warning mt-4 fw-800 col-12">Register</a>
+							<button type="submit"  class="btn btn-outline-warning mt-4 fw-800 col-12">Register</button>
 							
 							<!-- <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
 								Login
@@ -691,6 +609,88 @@
 	</div>
   </div> 
 
+  <div class="modal fade "  id="contactModal" tabindex="-1" aria-labelledby="contactModal" aria-hidden="true">
+	<div class="modal-dialog box_inner">
+		<div class="close">
+			<a href="#"><img class="svg" src="img/svg/cancel.svg" alt="" /></a>
+		</div>
+		<div class="description_wrap scrollable">
+			<div class="title">
+				<h3>Get in touch</h3>
+			</div>
+			<div class="wrapper">
+				<div class="left">
+					<div class="fields">
+						<form action="/" method="post" class="contact_form" id="contact_form" autocomplete="off">
+							<div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
+							<div class="empty_notice"><span>Please Fill Required Fields</span></div>
+							<div class="first">
+								<ul>
+									<li>
+										<input id="name" type="text" placeholder="Name">
+									</li>
+									<li>
+										<input id="email" type="text" placeholder="Email">
+									</li>
+									
+									<li>
+										<input id="file" type="file" placeholder="Email">
+									</li>
+								</ul>
+							</div>
+							<div class="last">
+								<textarea id="message" placeholder="Message"></textarea>
+							</div>
+							<div class="shane_tm_button" data-position="left">
+								<a id="send_message" href="#">
+									<span>Send Message</span>
+								</a>
+							</div>
+
+						
+
+						</form>
+					</div>
+				</div>
+				<div class="right">
+					<div class="map_wrap">
+						<div class="map" id="ieatmaps"></div>
+					</div>
+				</div>	
+			</div>	
+			<div class="short_info">
+				<ul>
+					<li>
+						<div class="list_inner">
+							<img class="svg" src="img/svg/location.svg" alt="" />
+							<p>Brook 103, 90021 New York, USA</p>
+						</div>
+					</li>
+					<li>
+						<div class="list_inner">
+							<img class="svg" src="img/svg/phone.svg" alt="" />
+							<p><a href="tel:+77 033 442 55 57">+77 033 442 55 57</a></p>
+						</div>
+					</li>
+					<li>
+						<div class="list_inner">
+							<img class="svg" src="img/svg/share.svg" alt="" />
+							<ul class="social">
+								<li><a href="#"><img class="svg" src="img/svg/social/facebook.svg"></a></li>
+								<li><a href="#"><img class="svg" src="img/svg/social/twitter.svg"></a></li>
+								<li><a href="#"><img class="svg" src="img/svg/social/instagram.svg"></a></li>
+								<li><a href="#"><img class="svg" src="img/svg/social/dribbble.svg"></a></li>
+								<li><a href="#"><img class="svg" src="img/svg/social/tik-tok.svg"></a></li>
+								
+								
+								
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>  </div> 
 	
 <!-- SCRIPTS -->
 <script src="js/jquery.js"></script>
