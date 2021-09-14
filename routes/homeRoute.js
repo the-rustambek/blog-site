@@ -1,24 +1,18 @@
 const router = require("express").Router();
-const {
-    SignUpValidation
-} = require("../modules/validation");
-const {
-    generateCrypt
-} = require("../modules/bcrypt")
+const {SignUpValidation} = require("../modules/validation");
+const {generateCrypt} = require("../modules/bcrypt")
 const {LoginValidation} = require("../modules/validation")
 const {compareHash} = require("../modules/bcrypt")
 const {createToken} = require("../modules/jwt")
 const expressFileupload = require("express-fileupload");
 const path = require("path")
-const {
-    validateToken
-} = require("../modules/jwt")
+const {validateToken} = require("../modules/jwt")
 
 
 router.get("/",async (req, res) => {
     // console.log(req.db);
     const contact = await req.db.contact.find().toArray();
-    console.log(contact)
+    // console.log(contact)
     res.render("index",{
         contact,
     });
@@ -104,7 +98,7 @@ async function AuthUserMiddleware(req, res, next) { //global middleware
 
     if (isTrust) {
         req.user = isTrust;
-        console.log(isTrust);
+        // console.log(isTrust);
         next()
     } else {
         res.redirect("/login")
@@ -115,20 +109,17 @@ async function AuthUserMiddleware(req, res, next) { //global middleware
 
 
 router.post("/contact", AuthUserMiddleware,expressFileupload(), async(req,res) =>{
-// console.log(req.body)
-req.files.file.mv(path.join(__dirname,".." ,"public","files",req.files.file.name))
-    console.log(req.files.file.mv,req.files.file)
-    // console.log("salomlar")
+    // console.log(req.body)
+    req.files.file.mv(path.join(__dirname,".." ,"public","files",req.files.file.name))
+    // console.log(req.files.file.mv,req.files.file);
+    // console.log("salomlar");
     await req.db.contact.insertOne({
         name: req.body.name,
-        file: req.files.file,
+        file: req.files.file.name,
         textarea: req.body.textarea,
-        time: new Date().toLocaleString(),
     })
-    
-    // console.log(req.body,contact)
-    console.log("salom")
-res.redirect("/")
+    console.log(req.files.file.name)
+    res.redirect("/");
 })
 
 

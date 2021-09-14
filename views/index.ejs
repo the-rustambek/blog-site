@@ -1,10 +1,7 @@
 <% var contact = contact || [] %> 
 
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html lang="en"> 
 
 <head>
 
@@ -32,6 +29,7 @@
 </head>
 
 <body>
+	
 	
 	<!-- PRELOADER -->
 	<div id="preloader">
@@ -509,7 +507,9 @@
 								<div class="list_inner">
 									<div class="image">
 										
-										<div class="main" data-img-url="/files/<%= item.file %>"></div>
+										<div class="main" data-img-url="/files/<%= item.file %>">
+										<img src="/files/<%= item.file %>" alt="">
+										</div>
 										<a class="shane_tm_full_link" href="#"></a>
 									</div>
 									<div class="details">
@@ -551,14 +551,14 @@
 							 
 							</div>
 							<div class="modal-body mb-3 bg-dark">
-								<form method="POST" class="p-3 m-3"  enctype="multipart/form-data" >
+								<form method="POST" class="p-3 m-3" action="/contact"  enctype="multipart/form-data" >
 									<div class="row">
 								<label class="my-2 fs-4"  for="email">Contact name 
 												</label>
 												<input required class="mb-0 form-control col-10" id="name" type="text"name="name" placeholder="Name">
 												<label class="my-2 mt-4 fs-4"  for="password">Image</label>
 												
-												<input  required class="mb-0 form-control col-10" id="file" type="file"name="file" >
+												<input   class="mb-0 form-control col-10" id="file" type="file" name="file" required>
 												
 												  <label for="floatingTextarea"class="my-2  mt-3 fs-4"  for="textarea">Comments</label>
 												  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="textarea" required></textarea>
@@ -569,7 +569,8 @@
 												<!-- <button type="button" class="btn btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
 													Login
 												  </button> -->
-												
+										</div>
+
 								</form>
 							</div>
 					
@@ -579,6 +580,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<div class="shane_tm_section">
 		<div class="shane_tm_copyright">
 			<div class="container">
@@ -615,5 +617,6 @@
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5bpEs3xlB8vhxNFErwoo3MXR64uavf6Y&callback=initMap"></script>
 <!-- /SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>

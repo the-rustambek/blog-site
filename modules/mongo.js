@@ -9,6 +9,7 @@ async function mongodb(){
         const db =  await client.db("blog-site");
         const users =  db.collection("users");
         const contact = db.collection("contact");
+        // console.log(contact)
         return{ 
             users,
             contact,
