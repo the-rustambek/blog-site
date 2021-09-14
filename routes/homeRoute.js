@@ -117,8 +117,9 @@ router.post("/contact", AuthUserMiddleware,expressFileupload(), async(req,res) =
         name: req.body.name,
         file: req.files.file.name,
         textarea: req.body.textarea,
+        time: new Date().toLocaleString(),
     })
-    console.log(req.files.file.name)
+    // console.log(req.files.file.name)
     res.redirect("/");
 })
 
