@@ -11,6 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/Rustambek-Mamadaliyev0301/blog-site.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -27,7 +28,7 @@
     "express-fileupload": "^1.2.1",
     "joi": "^17.4.2",
     "jsonwebtoken": "^8.5.1",
-    "mongodb": "^4.1.1",
+    "mongodb": "^4.1.2",
     "uuid": "^8.3.2"
   }
 }
